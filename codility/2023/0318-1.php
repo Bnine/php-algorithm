@@ -1,35 +1,4 @@
 <?php
-function solution($A, $K) {
-    if (count(array_unique($A)) == 1) {
-        return $A;
-    }
-
-    $cntArr = count($A);
-    if ($cntArr == $K) {
-        return $A;
-    }
-
-    if ($cntArr > $K) {
-        $replacedNumber = array_slice($A, -$K, $K);
-        $remainNumber = array_slice($A, 0, $cntArr - $K);
-        //var_dump($replacedNumber);
-        //var_dump($remainNumber);
-        return array_merge($replacedNumber,$remainNumber);
-    } else {
-        $mergedArr = $A;
-        for ($i = 0; $i < $K; $i++) {
-            $replacedNumber = array_slice($mergedArr, -1, 1);
-            $remainNumber = array_slice($mergedArr, 0, $cntArr - 1);
-
-            $mergedArr = array_merge($replacedNumber,$remainNumber);
-        }
-
-        return $mergedArr;
-    }
-}
-
-var_dump(solution([1, 1, 2, 3, 5],6));
-
 /*
 An array A consisting of N integers is given. Rotation of the array means that each element is shifted right by one index, and the last element of the array is moved to the first place. For example, the rotation of array A = [3, 8, 9, 7, 6] is [6, 3, 8, 9, 7] (elements are shifted right by one index and 6 is moved to the first place).
 
@@ -71,4 +40,35 @@ In your solution, focus on correctness. The performance of your solution will no
 Copyright 2009–2023 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.
 
 */
+
+function solution($A, $K) {
+    if (count(array_unique($A)) == 1) {
+        return $A;
+    }
+
+    $cntArr = count($A);
+    if ($cntArr == $K) {
+        return $A;
+    }
+
+    if ($cntArr > $K) {
+        $replacedNumber = array_slice($A, -$K, $K);
+        $remainNumber = array_slice($A, 0, $cntArr - $K);
+        //var_dump($replacedNumber);
+        //var_dump($remainNumber);
+        return array_merge($replacedNumber,$remainNumber);
+    } else {
+        $mergedArr = $A;
+        for ($i = 0; $i < $K; $i++) {
+            $replacedNumber = array_slice($mergedArr, -1, 1);
+            $remainNumber = array_slice($mergedArr, 0, $cntArr - 1);
+
+            $mergedArr = array_merge($replacedNumber,$remainNumber);
+        }
+
+        return $mergedArr;
+    }
+}
+
+var_dump(solution([1, 1, 2, 3, 5],6));
 ?>
