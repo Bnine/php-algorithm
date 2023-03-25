@@ -5,8 +5,24 @@
 > PHPを利用してアルゴリズムスタディを行った記録。
 ## Index
 ### Codility
-<h1>
-    <a href="https://github.com/Bnine/php-algorithm/tree/master/codility" target="_blank" title="Main">
-    Main
-    </a>
-</h1>
+<ul>
+    <li>
+        <a href="https://github.com/Bnine/php-algorithm/tree/master/codility" target="_blank" title="Main">
+            Main
+        </a>
+        <ul>
+            <li>
+                <a href="https://github.com/Bnine/php-algorithm/tree/master/codility" target="_blank" title="Main">
+                    Lesson1
+                </a>
+                <ol>
+                    <li>
+                        <a href="https://github.com/Bnine/php-algorithm/tree/master/codility" target="_blank" title="Main">
+                            Lesson1
+                        </a>
+                    </li>
+                </ol>
+            </li>
+        </ul>
+    </li>
+</ul>
