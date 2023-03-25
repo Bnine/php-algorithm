@@ -56,7 +56,7 @@ function solution($N) {
  * Performance: Not assessed
  * 
  * @Detected time complexity: Not assessed
- * @Link: https://app.codility.com/demo/results/training4M9NVX-946/
+ * @Link: [Result](https://app.codility.com/demo/results/training4M9NVX-946/)
 ## Comment
 > 적절하게 각 언어들의 내장함수를 이용해서 구현하는데 문제가 없는 수준.  
 > 딱히 크게 힘들지 않게 구현

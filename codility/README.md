@@ -16,17 +16,5 @@
 3. 総点100％を達成したら、他のアルゴリズムと比較します。
 ```
 ## Index
-<ul>
-    <li>
-        <a href="https://github.com/Bnine/php-algorithm/tree/master/codility/Lesson1" target="_blank" title="Main">
-            Lesson1
-        </a>
-        <ol>
-            <li value="1">
-                <a href="https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson1/BinaryGap.md" target="_blank" title="Main">
-                    BinaryGap
-                </a>
-            </li>
-        </ol>
-    </li>
-</ul>
+- [Lesson1](https://github.com/Bnine/php-algorithm/tree/master/codility/Lesson1)
+    + [1. BinaryGap](https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson1/BinaryGap.md)
