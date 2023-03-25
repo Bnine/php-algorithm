@@ -7,7 +7,7 @@
 ## Index
 <ol>
     <li>
-        <a href="https://github.com/Bnine/php-algorithm/tree/master/codility" target="_blank" title="Main">
+        <a href="https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson1/BinaryGap.md" target="_blank" title="Main">
             BinaryGap
         </a>
     </li>
