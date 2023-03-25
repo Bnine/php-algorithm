@@ -1,68 +1,35 @@
 <?php
-/*
-A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of N.
-
-For example, number 9 has binary representation 1001 and contains a binary gap of length 2. The number 529 has binary representation 1000010001 and contains two binary gaps: one of length 4 and one of length 3. The number 20 has binary representation 10100 and contains one binary gap of length 1. The number 15 has binary representation 1111 and has no binary gaps. The number 32 has binary representation 100000 and has no binary gaps.
-
-Write a function:
-
-function solution($N);
-
-that, given a positive integer N, returns the length of its longest binary gap. The function should return 0 if N doesn't contain a binary gap.
-
-For example, given N = 1041 the function should return 5, because N has binary representation 10000010001 and so its longest binary gap is of length 5. Given N = 32 the function should return 0, because N has binary representation '100000' and thus no binary gaps.
-
-Write an efficient algorithm for the following assumptions:
-
-N is an integer within the range [1..2,147,483,647].
-Copyright 2009–2023 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.
-*/
-/*
+/**
+ * Lesson 1-1 : BinaryGap
+ * 
+ * @Total score: 100%
+ * 
+ * Task: 100%
+ * Correctness: 100%
+ * Performance: Not assessed
+ * 
+ * @Detected time complexity: Not assessed
+ * @Link: https://app.codility.com/demo/results/training4M9NVX-946/
+ */
 function solution($N) {
+    //Change Integer to Binary by PHP API.
     $nVal = decbin($N);
+    //var_dump($nVal);
+
+    //Delete 0 value at Start and Back
+    $nVal=trim($nVal, "0");
+    //var_dump($nVal);
+
+    //Create array with explode() PHP API.
     $nValArr = explode(1, $nVal);
     //var_dump($nValArr);
-    $nValArrCnt = count($nValArr);
-    //echo "nValArrCnt count is -> ".$nValArrCnt.PHP_EOL;
-
-    if ($nValArrCnt <= 2 && !empty($nValArr[count($nValArr) - 1])) {
-        //echo "end of line is not ended with 1 -> ".$nValArr[count($nValArr) - 1].PHP_EOL;
-        return 0;
-    }
 
     $zeroCnt = 0;
     foreach($nValArr as $key => $val) {
         //echo "nValArr key -> ".$key." val -> ".$val.PHP_EOL;
-        if ($val == "") {
-            //echo "val is empty!".PHP_EOL;
-        } else {
-            if ($zeroCnt <= strlen($val) && $key != ($nValArrCnt - 1)) {
-                //echo "update zero counting! zeroCnt ->".$zeroCnt." value length -> ".strlen($val).PHP_EOL;
-                $zeroCnt = strlen($val);
-            }
-        }
-    }
-
-    return $zeroCnt;
-}
-*/
-
-function solution($N) {
-    $nVal = decbin($N);
-    $nValArr = explode(1, $nVal);
-    //var_dump($nValArr);
-    $nValArrCnt = count($nValArr);
-    //echo "nValArrCnt count is -> ".$nValArrCnt.PHP_EOL;
-
-    if ($nValArrCnt <= 2 && $nValArr[count($nValArr) - 1] != "") {
-        //echo "end of line is not ended with 1 -> ".$nValArr[count($nValArr) - 1].PHP_EOL;
-        return 0;
-    }
-
-    $zeroCnt = 0;
-    foreach($nValArr as $key => $val) {
-        //echo "nValArr key -> ".$key." val -> ".$val.PHP_EOL;
-        if ($val != "" && $zeroCnt <= strlen($val) && $key != ($nValArrCnt - 1)) {
+        //Checking Condition.
+        //1.Is val more than zeroCnt?
+        if ($zeroCnt <= strlen($val)) {
             //echo "update zero counting! zeroCnt ->".$zeroCnt." value length -> ".strlen($val).PHP_EOL;
             $zeroCnt = strlen($val);
         }
@@ -71,5 +38,12 @@ function solution($N) {
     return $zeroCnt;
 }
 
+var_dump(solution(2147983647));
+var_dump(solution(1041));
 var_dump(solution(32));
+var_dump(solution(328));
+var_dump(solution(9));
+var_dump(solution(529));
+var_dump(solution(20));
+var_dump(solution(15));
 ?>
