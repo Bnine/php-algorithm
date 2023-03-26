@@ -17,7 +17,7 @@ function solution($N) {
     //var_dump($nVal);
 
     //Delete 0 value at Start and Back
-    $nVal=trim($nVal, "0");
+    $nVal = trim($nVal, "0");
     //var_dump($nVal);
 
     //Create array with explode() PHP API.

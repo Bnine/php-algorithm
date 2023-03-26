@@ -18,3 +18,5 @@
 ## Index
 - [Lesson1](https://github.com/Bnine/php-algorithm/tree/master/codility/Lesson1)
     + [1. BinaryGap](https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson1/BinaryGap.md)
+- [Lesson2](https://github.com/Bnine/php-algorithm/tree/master/codility/Lesson2)
+    + [1. CyclicRotation](https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson2/CyclicRotation.md)
