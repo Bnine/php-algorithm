@@ -2,12 +2,16 @@
 Link : https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
 ## Task Goal
 ```
+Given a positive integer N, returns the length of its longest binary gap.
+The function should return 0 if N doesn't contain a binary gap.
+```
+```
 양수로 이루어진 N이 주어지면, 그중 가장 긴 이진간격(Binary Gap)의 길이를 반환한다.  
 만약 이진간격(Binary Gap)이 없는 N이라면, 0을 반환하라.
 ```
 ```
-Given a positive integer N, returns the length of its longest binary gap.
-The function should return 0 if N doesn't contain a binary gap.
+陽数のNの一番長いバイナリギャップを返す。
+もし、Nにバイナリギャップがない場合は、０を返す。
 ```
 ## How to solve
 ```
@@ -16,6 +20,13 @@ The function should return 0 if N doesn't contain a binary gap.
 3. 그후 explode() 내장함수로 0으로만 이루어진 배열을 만든다.
 4. Loop문을 통해 $zeroCnt의 값과 비교하면서 기존 값보다 크면 새로 갱신
 5. return $zeroCnt
+```
+```
+1. まず、NをPHPの内蔵関数のdecbin()を使用して二陣数に変更します。
+2. trim()内蔵関数を使用して前と後ろの0を除去します。
+3. explode()内蔵関数を使用して0で構成している配列を作ります。
+4. 反復文を通して$zeroCntのデータと比べて、既存のデータより大きい場合は、$zeroCntのデータを変更します。
+5. $zeroCntのデータを返します。
 ```
 ## Code
 ```php

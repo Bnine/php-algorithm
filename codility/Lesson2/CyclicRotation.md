@@ -2,11 +2,15 @@
 Link : https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/
 ## Task Goal
 ```
+The goal is to rotate array A K times; that is, each element of A will be shifted to the right K times.
+```
+```
 배열A와 K가 주어졌을때, K의 수만큼 배열의 값을 로테이션하는 로직을 만들어라.
 로테이션은 맨 뒤의 숫자가 맨 앞으로 이동한다.
 ```
 ```
-The goal is to rotate array A K times; that is, each element of A will be shifted to the right K times.
+配列AとKが与えられたら、整数Kの値ほど配列の値をローテーションする関数を作ってください。
+ローテーションは一番後ろの数が一番前に移動します。
 ```
 ## How to solve
 ```
@@ -14,6 +18,12 @@ The goal is to rotate array A K times; that is, each element of A will be shifte
 2. 예를 들어 Array의 값이 모두 같은 경우 및 Array 사이즈랑 $K가 같은 경우는 주어진 Array 그대로 Return
 3. Array 사이즈가 $K보다 큰 경우에는 array를 $K의 값에 맞게 짤라서 array_merge() 후 Return
 4. 3번의 조건에 맞는 않는 경우에는 Loop문을 통해 맨 뒤에서 부터 $K의 값에 맞게 Array를 가공 후에 Loop가 끝 난 후 Return 한다.
+```
+```
+1. まず、配列のデータを確認して条件に合わない場合はそのまま返します。
+2. 例えば、配列の値が全部同じデータとか配列のサイズとKの値が同じ場合はそのまま返します。
+3. 配列のサイズがKより大きい場合はKの値の長さで切って残り分と合わせて返します。(array_merge()を使用)
+4. 三番の条件に合わなかったら、反復文を使用して後ろからarray_slice()を通して新しい配列を生成して返します。
 ```
 ## Code
 ```php

@@ -2,6 +2,13 @@
 Link : https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/
 ## Task Goal
 ```
+Given an array A consisting of N integers fulfilling the above conditions, returns the value of the unpaired element.
+#Assumptions
+1. N is an odd integer within the range [1..1,000,000];
+2. each element of array A is an integer within the range [1..1,000,000,000];
+3. all but one of the values in A occur an even number of times.
+```
+```
 N개의 정수로 구성된 배열A가 주어졌을때, 배열A의 값 중 짝을 이루지 않은 값을 반환하라.
 #Assumptions
 1. N은 [1..1,000,000] 범위 내의 홀수로 이루어진 정수입니다.
@@ -9,11 +16,10 @@ N개의 정수로 구성된 배열A가 주어졌을때, 배열A의 값 중 짝�
 3. 배열A의 값 중 단 하나를 제외하고 짝수(짝을 이룸)로 발생합니다.
 ```
 ```
-Given an array A consisting of N integers fulfilling the above conditions, returns the value of the unpaired element.
-#Assumptions
-1. N is an odd integer within the range [1..1,000,000];
-2. each element of array A is an integer within the range [1..1,000,000,000];
-3. all but one of the values in A occur an even number of times.
+整数のN個で構成されている配列Aが与えられ与えられたら、配列Aの値の中で対になっていない要素を返します。
+1. Nは[1..1,000,000]の範囲内の奇数の整数です。
+2. 配列Aの要素は[1..1,000,000]範囲内の整数です。
+3. 配列Aの値の中にはただ一個だけが対になっていません。
 ```
 ## How to solve. 1st
 ```
@@ -22,6 +28,13 @@ Given an array A consisting of N integers fulfilling the above conditions, retur
 3. 예를 들어 배열A의 0번 인덱스의 값이 9라면 $valArr[9] = 1의 데이터를 생성하고 그 후 배열A의 2번 인덱스 값이 9일 경우 $valArr[9]의 값을 1 증가 시켜 $valArr[9]의 값은 2가 된다.
 4. Loop가 완료 된 후에 array_filter() 내장 함수를 이용하여 짝을 이룬 $valArr의 데이터를 제거한다.
 5. Assumptions의 내용에 따르면 짝을 이루지 않는 데이터는 한개 이므로, array_key_first() 내장 함수를 이용하여 key 값을 반환한다.
+```
+```
+1. まず、配列Aを反復文を通して$valArr配列データを生成します。
+2. ただ、生成される配列のindexには配列Aの値を入れます。
+3. 例えば、配列Aの0番目の値が9なら、$valArr[9]　= 1のデータを生成して、その後配列Aの二番目の値が9なら、$valArr[9]の値を1増えして$valArr[9]の値を2に作ります。
+4. 反復文が終わったら、array_filter()を通して対になっている$valArrのデータを除去します。
+5. array_key_first()関数を使用して返します。
 ```
 ## Code. 1st
 ```php
@@ -54,6 +67,15 @@ function solution($A) {
 3. 왜? 없어냐? -> 어차피 짝이 이루어진 데이터는 이 시점에서 더 이상 필요 없기 때문
 4. 2번에서 unset을 해줌으로써 array_filter() 함수는 더 이상 필요 없어진다.
 5. array_key_first() 내장 함수를 이용하여 key 값을 반환한다.
+```
+```
+#Extra Comment
+#でも、、、なんか、githubにアップロードする前にもう一度コードを見たら、要らないロジックがある気がする、、、
+1. まず、配列Aを反復文を通して$valArr配列データを生成します。(同上)
+2. ただ、生成される配列のindexには配列Aの値を入れて、もし対になった場合は該当配列をunset()を通して除去します。
+3. なんで、除去しますか？->対になった時点からもう要らないデータになります。
+4. 二番目でunset()したからもうarray_filter()関数は要らないです。
+5. array_key_first()関数を使用して返します。(同上)
 ```
 ## Code. 2nd
 ```php
