@@ -6,3 +6,4 @@
 ```
 ## Index
 + [1. CyclicRotation](https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson2/CyclicRotation.md)
++ [2. OddOccurrencesInArray](https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson2/OddOccurrencesInArray.md)

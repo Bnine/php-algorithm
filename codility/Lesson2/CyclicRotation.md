@@ -2,7 +2,7 @@
 Link : https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/
 ## Task Goal
 ```
-array A와 K가 주어졌을때, K의 수만큼 배열의 값을 로테이션하는 로직을 만들어라.
+배열A와 K가 주어졌을때, K의 수만큼 배열의 값을 로테이션하는 로직을 만들어라.
 로테이션은 맨 뒤의 숫자가 맨 앞으로 이동한다.
 ```
 ```
