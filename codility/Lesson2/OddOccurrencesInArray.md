@@ -58,7 +58,6 @@ function solution($A) {
 ## Code. 2nd
 ```php
 function solution($A) {
-    //This is Second Code.
     $valArr = array();
     foreach ($A as $val) {
         if (isset($valArr[$val])) {
@@ -85,6 +84,6 @@ function solution($A) {
  * @Detected time complexity: O(N) or O(N*log(N))
  * @Link: [Result](https://app.codility.com/demo/results/trainingXCQZAH-RQN/)
 ## Comment
-> 조금만 더 생각해보면 아름답고 크-린한 코드를 구현할 수 있다...
+> 조금만 더 생각해보면 아름답고 크-린한 코드를 구현할 수 있다...  
 > 이번 챕터부터 요구사항이 추가되고 Performance를 측정하는 등 난이도가 올라가는 듯 하다.  
 > 아! 그리고 이번 챕터 역시 배열에 익숙한 분들이면 크게 어렵지 않게 구현이 가능한 수준인 듯 하다.  
