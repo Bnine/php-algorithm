@@ -5,4 +5,4 @@
 配列
 ```
 ## Index
-+ [1. CyclicRotation](https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson２/CyclicRotation.md)
++ [1. CyclicRotation](https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson2/CyclicRotation.md)
