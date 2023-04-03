@@ -13,7 +13,7 @@ The function should return 0 if N doesn't contain a binary gap.
 陽数のNの一番長いバイナリギャップを返す。
 もし、Nにバイナリギャップがない場合は、０を返す。
 ```
-## How to solve
+## How to solve(1st time).
 ```
 1. 우선 N을 PHP 내장함수인 decbin()을 통해 이진수로 변경한다.
 2. trim() 함수로 앞 뒤로 0으로 이루어진 값을 제거해준다.
@@ -28,7 +28,7 @@ The function should return 0 if N doesn't contain a binary gap.
 4. 反復文を通して$zeroCntのデータと比べて、既存のデータより大きい場合は、$zeroCntのデータを変更します。
 5. $zeroCntのデータを返します。
 ```
-## Code
+## Code(1st time).
 ```php
 function solution($N) {
     //Change Integer to Binary by PHP API.

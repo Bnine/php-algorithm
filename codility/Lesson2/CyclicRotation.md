@@ -12,7 +12,7 @@ The goal is to rotate array A K times; that is, each element of A will be shifte
 配列AとKが与えられたら、整数Kの値ほど配列の値をローテーションする関数を作ってください。
 ローテーションは一番後ろの数が一番前に移動します。
 ```
-## How to solve
+## How to solve(1st time).
 ```
 1. Array 데이터를 먼저 validation 하여 미리 쳐 낼 수 있는 값은 미리 구별하여 return
 2. 예를 들어 Array의 값이 모두 같은 경우 및 Array 사이즈랑 $K가 같은 경우는 주어진 Array 그대로 Return
@@ -25,7 +25,7 @@ The goal is to rotate array A K times; that is, each element of A will be shifte
 3. 配列のサイズがKより大きい場合はKの値の長さで切って残り分と合わせて返します。(array_merge()を使用)
 4. 三番の条件に合わなかったら、反復文を使用して後ろからarray_slice()を通して新しい配列を生成して返します。
 ```
-## Code
+## Code(1st time).
 ```php
 function solution($A, $K) {
     //Is array created with same values?

@@ -16,12 +16,12 @@ N개의 정수로 구성된 배열A가 주어졌을때, 배열A의 값 중 짝�
 3. 배열A의 값 중 단 하나를 제외하고 짝수(짝을 이룸)로 발생합니다.
 ```
 ```
-整数のN個で構成されている配列Aが与えられ与えられたら、配列Aの値の中で対になっていない要素を返します。
+整数のN個で構成されている配列Aが与えられたら、配列Aの値の中で対になっていない要素を返します。
 1. Nは[1..1,000,000]の範囲内の奇数の整数です。
 2. 配列Aの要素は[1..1,000,000]範囲内の整数です。
 3. 配列Aの値の中にはただ一個だけが対になっていません。
 ```
-## How to solve. 1st
+## How to solve(1st time).
 ```
 1. 배열A를 우선 Loop를 돌리면서 $valArr 배열에 데이터를 생성한다.
 2. 단 이때 생성되는 배열은 key에는 A[N]의 Value 값으로 생성하고, 만약 짝이 발생한 경우 Value를 1씩 증가 시킨다.
@@ -36,7 +36,7 @@ N개의 정수로 구성된 배열A가 주어졌을때, 배열A의 값 중 짝�
 4. 反復文が終わったら、array_filter()を通して対になっている$valArrのデータを除去します。
 5. array_key_first()関数を使用して返します。
 ```
-## Code. 1st
+## Code(1st time).
 ```php
 function solution($A) {
     $valArr = array();
@@ -58,7 +58,7 @@ function solution($A) {
     return array_key_first($valArr);
 }
 ```
-## How to solve. 2nd
+## How to solve(2nd time).
 ```
 #Extra Comment 
 #그런데 Git에 올리기전에 코드를 다시 살펴보니 쓸모없는 로직이 몇개 있는 것 같았다.
@@ -77,7 +77,7 @@ function solution($A) {
 4. 二番目でunset()したからもうarray_filter()関数は要らないです。
 5. array_key_first()関数を使用して返します。(同上)
 ```
-## Code. 2nd
+## Code(2nd time).
 ```php
 function solution($A) {
     $valArr = array();

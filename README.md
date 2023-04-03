@@ -11,3 +11,7 @@
     - [Lesson2](https://github.com/Bnine/php-algorithm/tree/master/codility/Lesson2)
         + [1. CyclicRotation](https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson2/CyclicRotation.md)
         + [2. OddOccurrencesInArray](https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson2/OddOccurrencesInArray.md)
+    - [Lesson3](https://github.com/Bnine/php-algorithm/tree/master/codility/Lesson3)
+        + [1. FrogJmp](https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson3/FrogJmp.md)
+        + [2. PermMissingElem](https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson3/PermMissingElem.md)
+        + [3. TapeEquilibrium](https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson3/TapeEquilibrium.md)
