@@ -15,3 +15,7 @@
         + [1. FrogJmp](https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson3/FrogJmp.md)
         + [2. PermMissingElem](https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson3/PermMissingElem.md)
         + [3. TapeEquilibrium](https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson3/TapeEquilibrium.md)
+    - [Lesson4](https://github.com/Bnine/php-algorithm/tree/master/codility/Lesson4)
+        + [1. FrogRiverOne](https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson4/FrogRiverOne.md)
+        + [2. PermCheck](https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson4/PermCheck.md)
+        + [3. MaxCounters](https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson4/MaxCounters.md)
