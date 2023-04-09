@@ -20,3 +20,5 @@
         + [2. PermCheck](https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson4/PermCheck.md)
         + [3. MaxCounters](https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson4/MaxCounters.md)
         + [4. MissingInteger](https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson4/MissingInteger.md)
+    - [Lesson5](https://github.com/Bnine/php-algorithm/tree/master/codility/Lesson5)
+        + [1. PassingCars](https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson5/PassingCars.md)
