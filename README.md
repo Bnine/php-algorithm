@@ -24,3 +24,4 @@
         + [1. PassingCars](https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson5/PassingCars.md)
         + [2. CountDiv](https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson5/CountDiv.md)
         + [3. GenomicRangeQuery](https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson5/GenomicRangeQuery.md)
+        + [4. MinAvgTwoSlice](https://github.com/Bnine/php-algorithm/blob/master/codility/Lesson5/MinAvgTwoSlice.md)
